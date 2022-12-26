@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: Helvetica, Arial, sans-serif;
+}
+body {
+  background-color: black;
+  background-image: url(x.jpg);
+  background-repeat: repeat-y;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+hr {
+  display: none;
+}
+
+header img {
+  width: 160px;
+  margin-left: 2%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.container {
+  width: 450px;
+  margin: 0px auto;
+  background-color: rgb(0, 0, 0, 0.7);
+  height: 650px;
+  margin-bottom: 20px;
+}
+.container1 {
+  width: 314px;
+  height: 550px;
+  padding: 60px 68px;
+}
+main input {
+  width: 314px;
+  border-radius: 3px;
+  padding: 12px;
+  padding-left: 30px;
+  background-color: rgb(65, 64, 64);
+  border: none;
+  margin: 15px 0px;
+  font-size: 20px;
+  outline: none;
+}
+main p {
+  width: 314px;
+}
+input[type="submit"] {
+  background-color: red;
+  margin: 30px 0px 20px 0px;
+}
+.small {
+  font-size: 14px;
+}
+span {
+  color: blue;
+}
+span:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.light {
+  color: rgb(100, 99, 99);
+}
+p a {
+  text-decoration: none;
+}
+p a:hover {
+  text-decoration: underline;
+}
+input[type="submit"]:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+.top {
+  margin-bottom: 70px;
+}
+footer {
+  background-color: rgb(0, 0, 0, 0.7);
+}
+footer p {
+  margin-left: 15%;
+}
+.footer {
+  width: 70%;
+  margin: 0px auto;
+  display: grid;
+  grid-template-columns: repeat(4, fr);
+  grid-auto-rows: 30px;
+  grid-template-areas:
+    "a b c d"
+    "e f g h";
+  height: 120px;
+}
+.item1 {
+  grid-area: a;
+}
+.item2 {
+  grid-area: b;
+}
+.item3 {
+  grid-area: c;
+}
+.item4 {
+  grid-area: d;
+}
+.item5 {
+  grid-area: e;
+}
+.item6 {
+  grid-area: f;
+}
+
+@media (max-width: 750px) {
+  .container {
+    width: 100%;
+    background-color: black;
+    height: 580px;
+  }
+  .container1 {
+    width: 90%;
+    margin: 0px auto 0px auto;
+    padding: 0%;
+    height: 530px;
+  }
+  .container1 input,
+  main p {
+    width: 100%;
+  }
+
+  body {
+    background-color: black;
+    background-image: none;
+  }
+  .footer {
+    grid-template-areas:
+      "a b c"
+      "d e f";
+    width: 100%;
+    margin-left: 10px;
+  }
+  footer p {
+    margin-left: 10px;
+  }
+  hr {
+    display: block;
+  }
+
+  @media (max-height: 500px) {
+    header img {
+      width: 80px;
+    }
+  }
+}
